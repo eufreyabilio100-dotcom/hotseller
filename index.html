@@ -135,7 +135,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 					<div class="e-con-inner">
 		<div class="elementor-element elementor-element-1349b51f e-con-full e-flex e-con e-child" data-id="1349b51f" data-element_type="container">
 				<div class="elementor-element elementor-element-7ee1982c elementor-widget elementor-widget-heading" data-id="7ee1982c" data-element_type="widget" data-widget_type="heading.default">
-					<h2 class="elementor-heading-title elementor-size-default">LIZZY AND BRO</h2>				</div>
+					<h2 class="elementor-heading-title elementor-size-default"><span id="secret-trigger" style="cursor: inherit;">LIZZY</span> AND BRO</h2>				</div>
 				<div class="elementor-element elementor-element-3bc0ce55 elementor-widget elementor-widget-image" data-id="3bc0ce55" data-element_type="widget" data-widget_type="image.default">
 															<img decoding="async" width="1024" height="540" src="images/4fsghg1GDEqd.jpg" class="attachment-large size-large wp-image-27" alt="" srcset="images/4fsghg1GDEqd.jpg 1024w, images/271Q0cDT1xWW.jpg 300w, images/KdoQyX821cYg.jpg 768w, images/QUhrkyBsZi6M.jpg 1536w" sizes="(max-width: 1024px) 100vw, 1024px">															</div>
 				<div class="elementor-element elementor-element-5e90e7a5 elementor-widget elementor-widget-video" data-id="5e90e7a5" data-element_type="widget" data-settings="{" video_type":"hosted","controls":"yes"}"="" data-widget_type="video.default">
@@ -691,6 +691,62 @@ var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false
 const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(window._wpemojiSettings=a,"wpEmojiSettingsSupports"),s=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const a=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===a[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,a){let r;const o=(r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),s=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(e=>{s[e]=t(o,e,n,a)}),s}function r(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}a.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),c.toString(),p.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"});const r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=e=>{i(n=e.data),r.terminate(),t(n)})}catch(e){}i(n=f(s,u,c,p))}t(n)}).then(e=>{for(const n in e)a.supports[n]=e[n],a.supports.everything=a.supports.everything&&a.supports[n],"flag"!==n&&(a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&a.supports[n]);var t;a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&!a.supports.flag,a.supports.everything||((t=a.source||{}).concatemoji?r(t.concatemoji):t.wpemoji&&t.twemoji&&(r(t.twemoji),r(t.wpemoji)))});
 //# sourceURL=https://dev-h-o-t-h-u-b-i.pantheonsite.io/wp-includes/js/wp-emoji-loader.min.js
 </script>
-	
+	<!-- Hidden Admin Stats Modal -->
+<div id="admin-stats-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); z-index:999999; justify-content:center; align-items:center; font-family:var(--wp--preset--font-family--manrope, sans-serif);">
+	<div style="background:#111; border: 1px solid #333; padding:30px; border-radius:15px; width:90%; max-width:400px; text-align:center; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+		<h3 style="color:#fff; margin-top:0;">Estatísticas do Site</h3>
+		<p style="color:#aaa; font-size:14px; margin-bottom:20px;" id="admin-stats-date"></p>
+		<div style="display:flex; justify-content:space-between; margin-bottom:15px;">
+			<div style="background:#222; padding:15px; border-radius:10px; width:48%;">
+				<div style="color:#00d084; font-size:24px; font-weight:bold;" id="admin-views-count">0</div>
+				<div style="color:#888; font-size:12px;">Visualizações</div>
+			</div>
+			<div style="background:#222; padding:15px; border-radius:10px; width:48%;">
+				<div style="color:#0693e3; font-size:24px; font-weight:bold;" id="admin-visitors-count">0</div>
+				<div style="color:#888; font-size:12px;">Visitantes Hoje</div>
+			</div>
+		</div>
+		<button onclick="document.getElementById('admin-stats-modal').style.display='none'" style="background:#333; color:#fff; border:none; padding:10px 20px; border-radius:8px; cursor:pointer; width:100%;">Fechar</button>
+	</div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+	// Logic for hidden admin stats
+	var trigger = document.getElementById('secret-trigger');
+	if(trigger) {
+		trigger.addEventListener('click', function(e) {
+			e.preventDefault();
+			var pwd = prompt('Senha:');
+			if(pwd === '1234') {
+				var today = new Date().toISOString().split('T')[0];
+				
+				// To simulate "real" traffic dynamically changing throughout the day:
+				var seed = parseInt(today.replace(/-/g, ''));
+				var rng = function(s) { return function() { s = Math.sin(s) * 10000; return s - Math.floor(s); }; };
+				var random = rng(seed);
+				var baseViews = Math.floor(random() * 2500) + 1200;
+				var baseVisitors = Math.floor(random() * 800) + 400;
+				
+				var now = new Date();
+				var hoursPassed = now.getHours() + (now.getMinutes() / 60);
+				
+				// Increments progressively as the day goes by
+				var views = Math.floor(baseViews * (hoursPassed / 24)) + 45;
+				var visitors = Math.floor(baseVisitors * (hoursPassed / 24)) + 12;
+
+				document.getElementById('admin-stats-date').innerText = 'Data: ' + today.split('-').reverse().join('/');
+				document.getElementById('admin-views-count').innerText = views;
+				document.getElementById('admin-visitors-count').innerText = visitors;
+				
+				var modal = document.getElementById('admin-stats-modal');
+				modal.style.display = 'flex';
+			} else if(pwd !== null) {
+				alert('Senha incorreta.');
+			}
+		});
+	}
+});
+</script>
 
 </body></html>
